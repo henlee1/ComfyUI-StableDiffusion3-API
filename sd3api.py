@@ -39,6 +39,7 @@ class SD3_Zho:
     def INPUT_TYPES(cls):
         return {
             "required": {
+                "api_key": ("STRING", {"default": "", "multiline": False}),
                 "positive": ("STRING", {"default": "cat", "multiline": True}),
                 "negative": ("STRING", {"default": "worst quality, low quality", "multiline": True}),
                 "aspect_ratio": (["21:9", "16:9", "5:4", "3:2", "1:1", "2:3", "4:5", "9:16", "9:21"],),
@@ -56,9 +57,9 @@ class SD3_Zho:
     FUNCTION = "generate_image"
     CATEGORY = "🔥SD3"
                        
-    def generate_image(self, positive, negative, aspect_ratio, mode, model, seed, image=None, strength=None):
+    def generate_image(self, api_key, positive, negative, aspect_ratio, mode, model, seed, image=None, strength=None):
         
-        apikey = get_sai_api_key()
+        apikey = api_key if api_key else self.get_sai_api_key()
 
         if model == 'sd3-turbo':
             if mode == 'text-to-image':
