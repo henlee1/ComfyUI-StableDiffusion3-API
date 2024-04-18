@@ -1,3 +1,79 @@
+![ComfyUI_temp_xcgvh_00014_](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API/assets/140084057/39a8e52b-0df3-462a-b2e5-2bcae481f8ea)
+
+
+# ComfyUI Stable Diffusion 3 API
+
+<!---
+![Dingtalk_20240418023810](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API/assets/140084057/071031e5-0a53-4257-adf1-ed61e80fa9f6)
+--->
+
+![Dingtalk_20240418031631](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API/assets/140084057/3c3f9b8a-c219-47c4-88d3-b52cece676da)
+
+![Dingtalk_20240418031914](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API/assets/140084057/8b85f15c-b3f6-421a-831e-e05fccc097a6)
+
+SD3 TUrbo & Img2Img
+
+![Dingtalk_20240418160608](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API/assets/140084057/6c030471-5570-42d9-9931-c1455d7313b2)
+
+
+
+## Info
+
+- Bring Stable Diffusion 3 int ComfyUI via API
+
+- Stable Diffusion 3：API only at the moment，[details](https://stability.ai/news/stable-diffusion-3-api?utm_source=twitter&utm_medium=website&utm_campaign=blog)，API：[Stability API key](https://platform.stability.ai/account/keys)，25 free credits each account
+
+- Cost：
+   - SD3 6.5 credit/image
+   - SD3 Turbo 4 credit/image 
+  
+- Versions：V1.5 Multi aspect-ratio, image-to-image, etc.
+
+
+![Dingtalk_20240418004328](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API/assets/140084057/89952a6b-b46b-419b-a429-2771621998a7)
+
+
+## Features
+
+- 🔥Stable Diffusion 3
+    - positive：positive prompt
+    - negative：negative prompt（Turbo Not supported）
+    - aspect_ratio："21:9", "16:9", "5:4", "3:2", "1:1", "2:3", "4:5", "9:16", "9:21"（Not available in image-to-image）
+    - mode：text-to-image, or image-to-image
+    - model：SD3 or SD3 Turbo
+    - seed：seed
+    - image：optional for image-to-image only
+    - strength：optional for image-to-image only
+    
+![Dingtalk_20240418025505](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API/assets/140084057/47b122f9-3864-47fe-ae34-f2a25275a701)
+
+
+## Install
+
+- Apply for API ：[Stability API key](https://platform.stability.ai/account/keys)，25 free credits each account
+
+- Adding Stability API key into config.json file，it will auto-reload
+
+- Or just put your key into the api_key field
+
+- Manual install：
+    1. `cd custom_nodes`
+    2. `git clone https://github.com/henlee1/ComfyUI-StableDiffusion3-API`
+    3. restart ComfyUI
+
+
+## Workflows
+
+V1.0
+
+  - [V1.0 SD3 API]()
+
+    ![Dingtalk_20240418030657](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API/assets/140084057/c8c1f265-7f59-430d-ac00-0713019cbe44)
+    <!---
+    ![Dingtalk_20240418025716](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API/assets/140084057/833519ff-9480-4802-a43b-fa9a835fa7ef)
+    --->
+
+# Below is the original README
 
 ![ComfyUI_temp_xcgvh_00014_](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API/assets/140084057/39a8e52b-0df3-462a-b2e5-2bcae481f8ea)
 
